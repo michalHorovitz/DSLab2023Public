@@ -1,13 +1,15 @@
 package il.ac.telhai.ds.trees;
 
+import javax.swing.plaf.basic.BasicSplitPaneUI.KeyboardUpLeftHandler;
+
 public class BinarySearchTree<T extends Comparable<T>> {
 
-	BstNode root;
+	private BstNode root;
 
 	// Binary Search Tree Node
-	class BstNode {
-		T val;
-		BstNode left, right;
+	private class BstNode {
+		private T val;
+		private BstNode left, right;
 
 		public BstNode(T val) {
 			this.val = val;
@@ -58,7 +60,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 	public boolean add(T val) {
 		// Complete this code.
 	}
-
+	
 	/**
 	 * Removes the object in the tree which is equal to the parameter. 
 	 * Nothing is done if not found
