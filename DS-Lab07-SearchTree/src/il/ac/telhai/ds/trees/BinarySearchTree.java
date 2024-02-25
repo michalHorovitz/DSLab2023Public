@@ -2,6 +2,8 @@ package il.ac.telhai.ds.trees;
 
 import javax.swing.plaf.basic.BasicSplitPaneUI.KeyboardUpLeftHandler;
 
+import il.ac.telhai.ds.trees.BinarySearchTree.BstNode;
+
 public class BinarySearchTree<T extends Comparable<T>> {
 
 	private BstNode root;
@@ -70,6 +72,25 @@ public class BinarySearchTree<T extends Comparable<T>> {
 	 */
 	public boolean remove(T val) {
 		// Complete this code.
+	}
+	private BstNode removeRec(BstNode node, T val)
+	{
+	
+	}
+	
+	private BstNode insertRec(BstNode node, T val) {
+		
+	
+	private BstNode findParent(BstNode node, T val)
+	{
+		if (node.left.val==val)
+			return node;
+		if (node.right.val==val)
+			return node;
+		if (node.val>val)
+			return findParent( node.left, val);
+		if (node.val<val)
+			return findParent( node.right, val);	
 	}
 
 	/**

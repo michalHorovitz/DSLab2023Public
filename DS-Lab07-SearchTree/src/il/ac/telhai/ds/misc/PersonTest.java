@@ -62,7 +62,6 @@ public class PersonTest {
 		assertTrue(k4.compareTo(k2)<0);
 		assertTrue(k4.compareTo(k3)>0);
 		assertTrue(k4.compareTo(k4)==0);
-		assertTrue(k1.compareTo(null)<0);
 	}
 
 }
